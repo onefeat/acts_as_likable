@@ -16,9 +16,9 @@ Install
 
   * Make your ActiveRecord model act as likable.
   
-  	class Model < ActiveRecord::Base
-    	  acts_as_likable
-  	end
+	class Model < ActiveRecord::Base
+	  acts_as_likable
+	end
 
 == Credits
 
