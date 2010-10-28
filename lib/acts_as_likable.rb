@@ -38,8 +38,11 @@ module Adventtec
                     self.likes.find(:all, :include => [:user]).map(&:user) 
                 end
                 
-                def liked_by_user?(user)
-                    user && self.likes.first(:conditions => {:user_id => user.id})
+                def liked_by_user?(user = nil)
+                  if not user
+                    user = current_user
+                  end
+                  user && self.likes.first(:conditions => {:user_id => user.id})
                 end
             end
         end
