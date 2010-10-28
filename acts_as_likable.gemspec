@@ -9,7 +9,8 @@ Gem::Specification.new do |s|
   s.date = %q{2010-10-28}
   s.description = %q{Provides a simple way to add liking functionality to your application.}
   s.email = %q{}
-  s.extra_rdoc_files = ["README.md"]
+  s.extra_rdoc_files = ["README.md","uninstall.rb","acts_as_likable.gemspec","install.rb",".project","init.rb","generators/acts_as_likable_migration/templates/migration.rb","generators/acts_as_likable_migration/acts_as_likable_migration_generator.rb","lib/like.rb","lib/acts_as_likable.rb","test/acts_as_likable_test.rb","tasks/acts_as_likable_tasks.rake"]
+  s.files = ["README.md","uninstall.rb","acts_as_likable.gemspec","install.rb",".project","init.rb","generators/acts_as_likable_migration/templates/migration.rb","generators/acts_as_likable_migration/acts_as_likable_migration_generator.rb","lib/like.rb","lib/acts_as_likable.rb","test/acts_as_likable_test.rb","tasks/acts_as_likable_tasks.rake"]
   s.homepage = %q{http://github.com/edgarjs/ajaxful-rating}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Ajaxful_rating", "--main", "README.textile"]
   s.require_paths = ["lib"]
