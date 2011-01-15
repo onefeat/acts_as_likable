@@ -9,6 +9,7 @@ class ActsAsLikableMigrationGenerator < Rails::Generators::Base
   end
 
   def create_model_file
+    template "like.rb", "app/models/like.rb"
     migration_template "migration.rb", "db/migrate/acts_as_likable_migration.rb"
   end
 end

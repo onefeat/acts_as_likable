@@ -68,3 +68,6 @@ module Adventtec
     end
   end
 end
+
+ActiveRecord::Base.send(:include, Adventtec::Acts::Likable)
+ActiveRecord::Base.send(:include, Adventtec::Acts::Liker)
