@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{}
   s.email = %q{}
   s.extra_rdoc_files = ["CHANGELOG", "README.md", "lib/acts_as_likable.rb", "lib/like.rb"]
-  s.files = ["CHANGELOG", "MIT-LICENSE", "Manifest", "README.md", "Rakefile", "generators/acts_as_likable_migration/acts_as_likable_migration_generator.rb", "generators/acts_as_likable_migration/templates/migration.rb", "init.rb", "install.rb", "lib/acts_as_likable.rb", "lib/like.rb", "acts_as_likable.gemspec"]
+  s.files = ["CHANGELOG", "MIT-LICENSE", "Manifest", "README.md", "Rakefile", "lib/generators/acts_as_likable_migration_generator.rb", "lib/generators/templates/migration.rb", "init.rb", "install.rb", "lib/acts_as_likable.rb", "lib/like.rb", "acts_as_likable.gemspec"]
   s.homepage = %q{http://github.com/kitop/acts_as_likable}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Acts_as_likable", "--main", "README.md"]
   s.require_paths = ["lib"]
