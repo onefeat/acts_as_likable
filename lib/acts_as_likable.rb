@@ -30,8 +30,8 @@ module Adventtec
             module InstanceMethods
                 
                 # Same as likable.likes.size
-                def likes_count
-                    self.likes.count
+                def likes_sum
+                    self.likes.sum(:value)
                 end
                 
                 def users_who_liked
@@ -42,7 +42,20 @@ module Adventtec
                   if not user
                     user = current_user
                   end
-                  user && self.likes.first(:conditions => {:user_id => user.id})
+                  user && self.likes.first(:conditions => {:user_id => user})
+                end
+
+                def vote_by(user, value)
+                  self.likes.create(:user => user, :value => value)
+                end
+
+                def like_by(user)
+                  # self.likes.create(:user => user, :value =)
+                  self.vote_by(user, 1)
+                end
+
+                def dislike_by(user)
+                  self.vote_by(user, -1)
                 end
             end
         end

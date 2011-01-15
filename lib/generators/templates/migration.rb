@@ -3,6 +3,7 @@ class ActsAsLikableMigration < ActiveRecord::Migration
     create_table :likes, :force => true do |t|
       t.references :user, :null => false
       t.references :likable, :polymorphic => true, :null => false
+      t.integer :value, :null => false
       t.timestamps
     end
 
