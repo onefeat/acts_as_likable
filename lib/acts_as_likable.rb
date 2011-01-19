@@ -54,6 +54,11 @@ module Adventtec
                   self.vote_by(user, 1)
                 end
 
+                def unlike_by(user)
+                  # self.likes.create(:user => user, :value =)
+                  self.likes.find_by_user_id(user).destroy
+                end
+
                 def dislike_by(user)
                   self.vote_by(user, -1)
                 end
